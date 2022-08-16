@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-
+    overflow-x: hidden;
     color: #222;
 }
 
@@ -29,7 +29,6 @@ body {
 /* Header Section */
 
 .header-section {
-    height: 100vh;
     background-color: #636c79;
 }
 
@@ -123,6 +122,8 @@ input::placeholder {
 }
 
 .hero-btn {
+    position: absolute;
+    right: 0;
     margin-right: .6rem;
 }
 
@@ -372,4 +373,284 @@ footer {
     color: #c3c5c7;
     font-weight: 400;
     font-size: 18px;
+}
+
+@media(max-width:968px) {
+
+    .btn {
+        background-color: #8bb7a2;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        padding: 1rem 1.5rem;
+    }
+
+
+    .navbar-section {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .nav-items a {
+        font-size: 16px;
+        margin-left: 1.5rem;
+    }
+
+    .nav-items .nav-btn {
+        border: 1px solid #979797;
+        padding: .8rem 2rem;
+    }
+
+    .hero-section {
+        padding-bottom: 4rem;
+    }
+
+    .hero-img {
+        width: 90%;
+    }
+
+    .hero-right {
+        margin-left: 1rem;
+    }
+
+    .heading-hero {
+        font-size: 48px;
+        margin-bottom: 2rem;
+    }
+
+    .hero-desc {
+        font-size: 18px;
+        margin-bottom: 2rem;
+    }
+
+    .email input {
+        border: none;
+        width: 200px;
+        height: 2rem;
+        outline: none;
+        font-size: 14px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    .stats-heading {
+        font-size: 48px;
+    }
+
+    .numbers {
+        font-size: 36px;
+    }
+
+    .stats-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .stats-discuss {
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+
+    .fa-circle-play {
+        display: none;
+    }
+
+    .circle-1 {
+        display: none;
+    }
+
+    .circle-2 {
+        display: none;
+    }
+
+    .design-heading {
+        font-size: 48px;
+    }
+
+    .design-sections {
+        margin: 0 1rem;
+    }
+
+    .main {
+        font-size: 32px;
+        padding-right: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .desc {
+        font-size: 16px;
+        margin-bottom: 1.5rem;
+    }
+
+    .marketing .container {
+
+        margin-bottom: .5rem;
+    }
+
+    .connection {
+        margin: 0 1rem;
+    }
+
+    .team-section {
+        margin: 0 1rem;
+    }
+
+    .team-heading {
+        font-size: 48px;
+    }
+
+    .side-text {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 0 1rem;
+    }
+
+    .list a {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:512px) {
+
+    .navbar-section {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .nav-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-items a {
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .hero-desc {
+        padding: 0;
+    }
+
+    .email-input {
+        padding: 1rem;
+    }
+
+    .email {
+        margin-left: 0;
+    }
+
+    .stats-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-info>div {
+        margin-bottom: 1.5rem;
+    }
+
+    .stats-img {
+        width: 95%;
+    }
+
+    .stats-discuss {
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+
+    .design-heading {
+        font-size: 36px;
+    }
+
+    .design-sections {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .design-sections .section-left {
+        text-align: center;
+        order: 2;
+    }
+
+    .section-right {
+        text-align: center;
+    }
+
+    .main {
+        padding: 0 .5rem;
+    }
+
+    .desc {
+        padding: 0 1rem;
+    }
+
+    .marketing .container {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .marketing-img {
+        text-align: center;
+    }
+
+    .connection .container {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .connection .container .section-left {
+        order: 2;
+        text-align: center;
+    }
+
+    .team-main-text {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .team-heading {
+        margin-bottom: 1rem;
+    }
+
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+
+    .member-1 {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-items {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .list a {
+        font-size: 14px;
+    }
+
+
 }
